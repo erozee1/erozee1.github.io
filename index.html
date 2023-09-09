@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href = "style.css" rel = "stylesheet">
+    <script src = "script.js" defer></script>
+    <script src="https://kit.fontawesome.com/1e28c9ed58.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="tiles">    
+    </div>
+    <header class="tile">
+        <h1 class = "name"></h1>
+        <ul class = "bookmark" id = "menu">
+            <li class = "menu-item"><a href="#grades">1.1 <br> Grades</a></li>  
+            <li class = "menu-item"><a href="#projects">1.2 Projects</a></li>
+            <li class = "menu-item"><a href="#skills">1.3 <br>Skills</a></li>
+            <li class = "menu-item"><a href="#contacts">1.4 Contacts</a></li>  
+        </ul>
+        <div id="date-container" class = "date"></div>
+    </header>
+    <section class="intro hidden">
+        <p class = "intro-text"><strong>Hello!</strong><br> My name is Ethan Rozee.
+            <span class = "magic"> WELCOME TO MY NOTEBOOK.</span>
+        <br>This is where you get to look inside my brain.</p>
+    </section>
+    <div >
+        <p class="equation"> e = mc&sup2</p>
+        <p class="equation"> F = GMm &#8725; r&sup2</p>
+        <p class="equation"> eth was here</p>
+        <p class="equation">2i -45j = 0</p>
+        <p class="equation">a&sup2 + b&sup2 = c&sup2</p>
+        <p class="equation">e^(&iota;&pi;) + 1 = 0</p>
+    </div>
+    <img src="Me_for_website.png" alt="" class = "me">
+    <section>
+        <div class="about_me">
+            <h2 class = "hidden"> I am a 20 year old Aerospace Engineering student at the University of Nottingham. <br><br><br>I am passionate about absorbing knowledge <br> and developing
+            my skills in all walks of life.<br><br><br>I am currently focused on deep learning algorithms on python and am excited about the future of AI.</h2>
+        </div>
+    </section>
+    <img src="rocket.png" alt="" id = "rocket"><img src="rocket_back.png" alt="" id = "rocket-back">
+    <section id ="grades">
+        <h2 class = "hidden">Whoops...<br>Looks like I dropped some notes.</h2>
+        <div class="notebooks">
+            <div class="green note">
+                <div class="grades">
+                    <h1>Aerospace:</h1>
+                    <h1>Year 2 results:</h1>
+                    <br>
+                    <ul>
+                        <li>Dynamics and Flight Mechanics: 86.0%</li>
+                        <li>Thermodynamics and  Propulsion: 82.2%</li>
+                        <li>Project 2: 80.3%</li>
+                        <li>Control Systems: 78.3%</li>
+                        <li>Airframe and Materials: 83.9%</li>
+                        <li>Design and Manufacture: 79.9%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blue note">
+                <div class="grades">
+                <h1>A level results:</h1>
+                <br><br>
+                <ul>
+                    <li>Maths:    A*</li>
+                    <li>Physics:  A</li>
+                    <li>Business: A*</li>
+                </ul>
+                </div>
+            </div>
+            <div class="yellow note">
+                <div class="grades">
+                <h1>Aerospace:</h1>
+                    <h1>Year 1 results:</h1>
+                    <br>
+                    <ul>
+                        <li>Statics and Dynamics: 73.3%</li>
+                        <li>Aerodynamics: 72.7%</li>
+                        <li>Project 1: 80.4%</li>
+                        <li>Electrical and Electronic Engineering: 75.1%</li>
+                        <li>Design and Performance: 71.5%</li>
+                        <li>Design and Materials: 77.2% </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pink note">
+                <div class="grades">
+                <h2>GRADES</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class = "hidden" id = "projects">Why not...<br>Have a look at what i have been up to recently.</h2>
+        <div class="polaroids" >
+            <a href="Turbofan-project.html" class="polaroid fan"><div class="square" ><img src="Fanimage.png" alt="" class="fan-img"></div><p>Turbofan Design</p></a>
+            <a href ="JWF-internship.html" class="polaroid intern"><div class="square"><img src="jwf_linked_in_post.jpg" alt="" class = "jwf"></div><p>JWF Intern</p></a>
+            <a href ="Coding.html" class="polaroid codes"><div class="square"><img src="code.jpg" alt="" class = "code"></div><p>Coding</p></a>
+        </div>
+    </section>
+    <section id = "skills">
+        <h2 class = "hidden">These are a few of the skills I've picked up along the way.</h2>
+        <div class="skills">
+            <div class="skill hidden"><img src="spanish-flag.png" alt="" class = "spain"><i class="fa-regular fa-comment" style="color: #eaeaea;"><p class="">Spanish</p></i></div>
+            <div class="skill hidden"><img src="Python.png" alt="" class = "python"><i class="fa-regular fa-comment" style="color: #eaeaea;"><p class="">Python</p></i></div>
+            <div class="skill hidden"><img src="catia.png" alt="" class = "catia"><i class="fa-regular fa-comment" style="color: #eaeaea;"><p class="">CATIA</p></i></div>
+            <div class="skill hidden"><img src="solidworks.png" alt="" class = "solidworks"><i class="fa-regular fa-comment" style="color: #eaeaea;"><p class="">SOLID</p></i></div>
+        </div>
+    </section>
+
+<section id = "contacts">
+    <h2 class = "hidden">Come get to know me...</h2>
+    <div class="contacts">
+        <div class="contact hidden"><a href="https://www.instagram.com/ethan_rozee/" class="" target="_blank"><img src="insta.png" alt="" class = "insta"></a></div>
+        <div class="contact hidden"><a href="mailto:ethanrozee01@gmail.com"><img src="gmail.png" alt="" class = "gmail"></a></div>
+        <div class="contact hidden"><a href="https://www.linkedin.com/in/ethan-rozee-965997216/" class="" target="_blank"><img src="linked.png" alt="" class = "linked"></a></div>
+    </div>
+</section>
+</body>
+</html>
