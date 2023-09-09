@@ -168,18 +168,18 @@ section{
 }
 #rocket{
     position: absolute;
-    top: -90vh;
-    right: 102vw;
-    height: 300vh;
+    top: 5vh;
+    left: 3vw;
+    height: 65vh;
     transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     rotate: 90deg;
     z-index: 5;
 }
 #rocket-back{
     position: absolute;
-    top: -90vh;
-    right: 102vw;
-    height: 300vh;
+    top: 18vh;
+    left: 5vw;
+    height: 50vh;
     transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     rotate: 90deg;
     z-index: 4;
@@ -188,12 +188,7 @@ section{
 .animation{
     animation: shake 0.2s ease-in-out 15, travel 5s cubic-bezier(0,1.1,1,1) 3s forwards;
 }
-@media (max-width: 768px){
-    #rocket{
-        height:auto;
-        max-height:200vh;
-    }
-}
+
 @keyframes shake {
     0%, 100% {
       transform: translateX(0);
@@ -213,7 +208,7 @@ section{
       transform: translateY(0);
     }
     100% {
-      transform: translate( 180%, -60%);
+      transform: translate( 400%, -280%);
     }
   }
 h2{
@@ -370,7 +365,8 @@ h2{
     margin-right:10%;
 }
 .contact img{
-    height:20vw;
+    height:40vh;
+    max-height:40vh;
 }
 .contact:nth-child(2) img{
     height:90% ;
@@ -423,7 +419,7 @@ h2{
 .polaroid{
     position:absolute;
     height:120%;
-    max-height: 50vw;
+    max-height: 30vw;
     aspect-ratio: 0.810;
     background-color: #ffffff;
     border-radius:3%;
@@ -472,19 +468,19 @@ h2{
     position: absolute;
     transform: translate(-50%, -5%);
     top:15px;
-    height: 55vh;
+    height: 50vh;
     z-index:2;
 }
 .fan-img{
     position: absolute;
     top:15px;
     left:15%;
-    height: 50vh;
+    height: 45vh;
     z-index:3;
     border-radius: 10px;
 }
 .code{
-    height: 55vh;
+    height: 50vh;
 }
 .about_me{
     position:absolute;
