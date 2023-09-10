@@ -43,42 +43,42 @@ body::before {
     top: 110%;
     right:20%;
     color: #7afcff;
-    font-size: 4rem;
+    font-size: 10vh;
     transform: rotate(-20deg);
 }
 .equation:nth-child(2){
     top: 80%;
     left:10%;
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 5vh;
     transform: rotate(30deg);
 }
 .equation:nth-child(3){
     top: 240%;
     left:15%;
     color: #dbeb00;
-    font-size: 2rem;
+    font-size: 5vh;
     transform: rotate(-10deg);
 }
 .equation:nth-child(4){
     top: 310%;
     right:75%;
     color: #d81a6f;
-    font-size: 3rem;
+    font-size: 6vh;
     transform: rotate(-20deg);
 }
 .equation:nth-child(5){
     top: 510%;
     right:55%;
     color: #649514;
-    font-size: 4rem;
+    font-size: 10vh;
     transform: rotate(-20deg);
 }
 .equation:nth-child(6){
     top:640%;
     right:50%;
     color: #6644cc;
-    font-size: 2.8rem;
+    font-size: 7vh;
     transform: rotate(40deg);
 }
 #tiles{
@@ -100,7 +100,9 @@ body::before {
     top:0;
     right: 20vw;
     height: 80vh;
-    width: 100px;
+    min-height: 400px ;
+    width: 8vw;
+    min-width: 100px;
     background-color: #c01818;
     z-index: 100;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
@@ -110,6 +112,11 @@ body::before {
     flex-direction: column;
     cursor: pointer;
 }
+@media (max-height : 300px){
+    .bookmark{
+        opacity:0;
+    }
+}
 #date-container{
     color:#ffffff;
 }
@@ -118,6 +125,7 @@ body::before {
     list-style: none;
     padding: 10px;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 }
 .menu-item a{
     text-decoration: none;
@@ -125,6 +133,9 @@ body::before {
 }
 .menu-item:hover{
     transform: scale(1.1);
+}
+#menu-last{
+    opacity:0;
 }
 .name{
     font-size: 450%;
@@ -170,7 +181,7 @@ section{
     position: absolute;
     top: 5vh;
     left: 3vw;
-    height: 65vh;
+    height: 35vw;
     transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     rotate: 90deg;
     z-index: 5;
@@ -179,7 +190,7 @@ section{
     position: absolute;
     top: 18vh;
     left: 5vw;
-    height: 50vh;
+    height: 20vw;
     transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     rotate: 90deg;
     z-index: 4;
@@ -283,11 +294,13 @@ h2{
 .note{
     position: absolute;
     width:20vw;
+    min-width: 180px;
     aspect-ratio: 1;
     border-radius: 5px;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
     transition: transform 800ms cubic-bezier(.05, .43,.25,.95);
     transform: translateY(-10vh);
+    cursor:pointer;
 }
 .grades{
     margin: 5% 10%;
@@ -450,9 +463,9 @@ h2{
 .polaroid p{
     position:absolute;
     bottom: 0;
-    margin: 40px;
+    margin:10%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 600;
 } 
 .polaroids:hover >.fan{
@@ -497,17 +510,24 @@ footer{
     body {
         font-size: 10px; /* Adjust the base font size as needed */
     }
-    #rocket {
-        transform: scale(0.8);
-    }
-    #rocket-back {
-        transform: scale(0.8);
-    }
     .intro{
         justify-content: center;
     }
     .skill i{
         font-size: 60%;
+    }
+    .code{
+        height:40vw;
+    }
+    .fan-img{
+        height:18vw;
+    }
+    .jwf{
+        height:25vw; 
+    }
+    .contact img{
+        width:20vw;
+        height:auto;
     }
 }
 .menu-item{
@@ -537,7 +557,8 @@ footer{
     left: 15vw;
     font-size: 20vh;
     z-index: 1;
-    transition: transform 1600ms cubic-bezier(.57,-0.01,.33,.96);;
+    transition: transform 1600ms cubic-bezier(.57,-0.01,.33,.96);
+    cursor: pointer;
 }
 .animation2{
     transform: rotate(1440deg);

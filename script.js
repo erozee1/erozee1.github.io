@@ -23,7 +23,6 @@ const createGrid= () => {
 
     wrapper.style.setProperty("--columns", columns);
     wrapper.style.setProperty("--rows", rows);
-    
     createTiles(columns * rows);
 };
 createGrid()
@@ -49,18 +48,20 @@ window.addEventListener('load', function(){
 });
 
 const menu = document.getElementById("menu");
-
+const menu_last = document.getElementById("menu-last");
 let isOpen = false;
+
 menu.addEventListener("mouseover", () => {
     if (isOpen === false){
         menu.style.transform = "translate(12vw, 0)";
+        menu_last.style.opacity = 1;
         isOpen = true;
     }
-
 });
 menu.addEventListener("mouseout", () => {
     if (isOpen === true){
         menu.style.transform = "translate(12vw, -50vh)";
+        menu_last.style.opacity =0;
         isOpen = false;
     }
 
