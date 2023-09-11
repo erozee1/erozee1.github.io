@@ -187,7 +187,7 @@ section{
 }
 #rocket{
     position: absolute;
-    top: 5vh;
+    top: 4vh;
     left: 3vw;
     height: 35vw;
     transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -196,8 +196,8 @@ section{
 }
 #rocket-back{
     position: absolute;
-    top: 18vh;
-    left: 5vw;
+    top: 28vh;
+    left: 10vw;
     height: 20vw;
     transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     rotate: 90deg;
