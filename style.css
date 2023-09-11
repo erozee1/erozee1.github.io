@@ -530,7 +530,7 @@ h2{
         transform: translate(-45%, 8%) rotate(-8deg);
     }
     .code{
-        width:100%;
+        width:50vh;
     }
 }
 .about_me{
