@@ -485,6 +485,29 @@ h2{
 .polaroids:hover >.codes{
     transform: scale(1.05);
 }
+@media (pointer: coarse){
+    .polaroids >.fan{
+        transform: translate(-85%, 16%) rotate(-16deg);
+    }
+    .polaroids >.intern{
+        transform: translate(85%, 16%) rotate(16deg);
+    }
+    .polaroids >.codes{
+        transform: scale(1.05);
+    }
+    .notebooks > .pink{
+        transform: translate(45%, 8%) rotate(8deg);
+    }
+    .notebooks > .green{
+        transform: translate(125%, 26%) rotate(24deg);
+    }
+    .notebooks > .blue{
+        transform: translate(-125%, 26%) rotate(-24deg);
+    }
+    .notebooks > .yellow{
+        transform: translate(-45%, 8%) rotate(-8deg);
+    }
+}
 .jwf{
     position: absolute;
     transform: translate(-50%, -5%);
@@ -503,7 +526,7 @@ h2{
 .code{
     height: 50vh;
     z-index: 1;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .about_me{
     position:absolute;
