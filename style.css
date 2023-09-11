@@ -502,6 +502,8 @@ h2{
 }
 .code{
     height: 50vh;
+    z-index: 1;
+    overflow: hidden;
 }
 .about_me{
     position:absolute;
