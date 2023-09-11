@@ -485,7 +485,7 @@ h2{
 .polaroids:hover >.codes{
     transform: scale(1.05);
 }
-@media (pointer: coarse){
+@media (hover: none){
     .polaroids >.fan{
         transform: translate(-85%, 16%) rotate(-16deg);
     }
