@@ -59,11 +59,9 @@ menu.addEventListener("mouseover", () => {
     }
 });
 menu.addEventListener("mouseout", () => {
-    if (isOpen === true){
         menu.style.transform = "translate(12vw, -50vh)";
         menu_last.style.opacity =0;
         isOpen = false;
-    }
 
 });
 

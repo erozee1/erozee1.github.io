@@ -17,7 +17,7 @@ body::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 81px;
+    left: 79px;
     width: 3px;
     height: 730%;
     background-color: red;
@@ -115,6 +115,14 @@ body::before {
 @media (max-height : 300px){
     .bookmark{
         opacity:0;
+    }
+}
+@media (max-width : 500px){
+    .bookmark{
+        opacity:0;
+    }
+    .tile{
+        opacity: 0;
     }
 }
 #date-container{
