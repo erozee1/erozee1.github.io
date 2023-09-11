@@ -485,6 +485,28 @@ h2{
 .polaroids:hover >.codes{
     transform: scale(1.05);
 }
+
+.jwf{
+    position: absolute;
+    transform: translate(-50%, -5%);
+    top:15px;
+    height: 50vh;
+    z-index:2;
+}
+.fan-img{
+    position: absolute;
+    top:15px;
+    left:15%;
+    height: 45vh;
+    z-index:3;
+    border-radius: 10px;
+}
+
+.code{
+    height: 50vh;
+    z-index: 1;
+    overflow-x: hidden;
+}
 @media (hover: none){
     .polaroids >.fan{
         transform: translate(-85%, 16%) rotate(-16deg);
@@ -507,26 +529,9 @@ h2{
     .notebooks > .yellow{
         transform: translate(-45%, 8%) rotate(-8deg);
     }
-}
-.jwf{
-    position: absolute;
-    transform: translate(-50%, -5%);
-    top:15px;
-    height: 50vh;
-    z-index:2;
-}
-.fan-img{
-    position: absolute;
-    top:15px;
-    left:15%;
-    height: 45vh;
-    z-index:3;
-    border-radius: 10px;
-}
-.code{
-    height: 50vh;
-    z-index: 1;
-    overflow-x: hidden;
+    .code{
+        width:100%;
+    }
 }
 .about_me{
     position:absolute;
