@@ -23,6 +23,11 @@ body::before {
     background-color: red;
     z-index: 0;
 }
+@media (max-width: 414px){
+    body::before{
+        background-color: transparent;
+    }
+}
 .equation{
     position: absolute;
     font-family: 'Fredericka the Great', cursive;
@@ -778,4 +783,12 @@ footer{
     position:absolute;
     top: 80vh;
     right:20vw;
+}
+.unsupported-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #ffffff;
 }

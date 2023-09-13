@@ -1,3 +1,13 @@
+console.log(window.innerWidth)
+if (window.innerWidth <= 600){
+    
+    if (window.location.href === "unsupported.html"){
+        ;
+    }else {
+        window.location.href = "unsupported.html";
+    }};
+    
+
 const wrapper = document.getElementById("tiles");
 
 const createTile = index => {
@@ -94,6 +104,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 document.getElementById("hacker").onmouseover = event => {
     let iterations = 0;
+    
     const interval = setInterval(() =>{
         event.target.innerText = event.target.innerText.split("")
         .map((letter, index) => {
@@ -107,3 +118,4 @@ document.getElementById("hacker").onmouseover = event => {
             iterations += 1/3;
         },30);
 };
+
