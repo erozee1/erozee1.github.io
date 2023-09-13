@@ -785,6 +785,7 @@ footer{
     right:20vw;
 }
 .unsupported-container{
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
